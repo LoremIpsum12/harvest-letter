@@ -1,29 +1,40 @@
+/// @DnDAction : YoYo Games.Common.If_Variable
+/// @DnDVersion : 1
+/// @DnDHash : 6F33E4D7
+/// @DnDArgument : "var" "global.jam_sekarang"
+/// @DnDArgument : "op" "1"
+/// @DnDArgument : "value" "12"
+if(global.jam_sekarang < 12){	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDVersion : 1
+	/// @DnDHash : 45E4D7BF
+	/// @DnDParent : 6F33E4D7
+	/// @DnDArgument : "expr" "+1"
+	/// @DnDArgument : "expr_relative" "1"
+	/// @DnDArgument : "var" "global.jam_sekarang"
+	global.jam_sekarang += +1;}
+
 /// @DnDAction : YoYo Games.Common.Variable
 /// @DnDVersion : 1
 /// @DnDHash : 54A2060F
-/// @DnDInput : 9
+/// @DnDInput : 8
 /// @DnDArgument : "expr" "6"
-/// @DnDArgument : "expr_1" "+1"
-/// @DnDArgument : "expr_relative_1" "1"
-/// @DnDArgument : "expr_3" "true"
-/// @DnDArgument : "expr_4" "+200"
-/// @DnDArgument : "expr_relative_4" "1"
-/// @DnDArgument : "expr_5" "1"
-/// @DnDArgument : "expr_6" "room_speed * 0.2"
-/// @DnDArgument : "expr_7" "+1"
-/// @DnDArgument : "expr_relative_7" "1"
-/// @DnDArgument : "expr_8" "false"
+/// @DnDArgument : "expr_2" "true"
+/// @DnDArgument : "expr_3" "+200"
+/// @DnDArgument : "expr_relative_3" "1"
+/// @DnDArgument : "expr_4" "1"
+/// @DnDArgument : "expr_5" "room_speed * 0.2"
+/// @DnDArgument : "expr_6" "+1"
+/// @DnDArgument : "expr_relative_6" "1"
+/// @DnDArgument : "expr_7" "false"
 /// @DnDArgument : "var" "global.jam_sekarang"
-/// @DnDArgument : "var_1" "global.hari"
-/// @DnDArgument : "var_2" "global.menit_sekarang"
-/// @DnDArgument : "var_3" "global.hari_sudah_diupdate"
-/// @DnDArgument : "var_4" "obj_budi.y"
-/// @DnDArgument : "var_5" "obj_budi.spd"
-/// @DnDArgument : "var_6" "obj_cycle_time.alarm[0]"
-/// @DnDArgument : "var_7" "obj_growth.image_index"
-/// @DnDArgument : "var_8" "global.popup_open"
+/// @DnDArgument : "var_1" "global.menit_sekarang"
+/// @DnDArgument : "var_2" "global.hari_sudah_diupdate"
+/// @DnDArgument : "var_3" "obj_budi.y"
+/// @DnDArgument : "var_4" "obj_budi.spd"
+/// @DnDArgument : "var_5" "obj_cycle_time.alarm[0]"
+/// @DnDArgument : "var_6" "obj_growth.image_index"
+/// @DnDArgument : "var_7" "global.popup_open"
 global.jam_sekarang = 6;
-global.hari += +1;
 global.menit_sekarang = 0;
 global.hari_sudah_diupdate = true;
 obj_budi.y += +200;
