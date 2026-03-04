@@ -80,6 +80,7 @@
     {"id":{"name":"obj_popup_qte","path":"objects/obj_popup_qte/obj_popup_qte.yy",},},
     {"id":{"name":"obj_popup_sleep","path":"objects/obj_popup_sleep/obj_popup_sleep.yy",},},
     {"id":{"name":"obj_popup","path":"objects/obj_popup/obj_popup.yy",},},
+    {"id":{"name":"obj_shop_ui","path":"objects/obj_shop_ui/obj_shop_ui.yy",},},
     {"id":{"name":"obj_sumur","path":"objects/obj_sumur/obj_sumur.yy",},},
     {"id":{"name":"obj_tanah","path":"objects/obj_tanah/obj_tanah.yy",},},
     {"id":{"name":"obj_text","path":"objects/obj_text/obj_text.yy",},},
