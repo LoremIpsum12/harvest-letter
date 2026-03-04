@@ -34,10 +34,24 @@ if(show_todolist == true){	/// @DnDAction : YoYo Games.Drawing.Draw_Sprite
 	/// @DnDParent : 1E672284
 	draw_set_alpha(1);
 
+<<<<<<< HEAD
+=======
+	/// @DnDAction : YoYo Games.Common.Function_Call
+	/// @DnDVersion : 1
+	/// @DnDHash : 270AD924
+	/// @DnDParent : 1E672284
+	/// @DnDArgument : "var" "fields "
+	/// @DnDArgument : "var_temp" "1"
+	/// @DnDArgument : "function" "layer_get_all_elements"
+	/// @DnDArgument : "arg" ""Fields""
+	var fields  = layer_get_all_elements("Fields");
+
+>>>>>>> jvn/main
 	/// @DnDAction : YoYo Games.Loops.For_Loop
 	/// @DnDVersion : 1
 	/// @DnDHash : 3BBBE753
 	/// @DnDParent : 1E672284
+<<<<<<< HEAD
 	/// @DnDArgument : "cond" "i < array_length(assigned_tasks)"
 	for(i = 0; i < array_length(assigned_tasks); i += 1) {	/// @DnDAction : YoYo Games.Common.Function_Call
 		/// @DnDVersion : 1
@@ -48,14 +62,32 @@ if(show_todolist == true){	/// @DnDAction : YoYo Games.Drawing.Draw_Sprite
 		/// @DnDArgument : "function" "array_contains"
 		/// @DnDArgument : "arg" "completed_tasks, i"
 		var is_completed = array_contains(completed_tasks, i);
+=======
+	/// @DnDArgument : "cond" "i < array_length(fields)"
+	for(i = 0; i < array_length(fields); i += 1) {	/// @DnDAction : YoYo Games.Common.Function_Call
+		/// @DnDVersion : 1
+		/// @DnDHash : 22A01C0A
+		/// @DnDParent : 3BBBE753
+		/// @DnDArgument : "var" "field"
+		/// @DnDArgument : "var_temp" "1"
+		/// @DnDArgument : "function" "layer_instance_get_instance"
+		/// @DnDArgument : "arg" "fields[i]"
+		var field = layer_instance_get_instance(fields[i]);
+>>>>>>> jvn/main
 	
 		/// @DnDAction : YoYo Games.Common.If_Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 0246DDAE
 		/// @DnDParent : 3BBBE753
+<<<<<<< HEAD
 		/// @DnDArgument : "var" "is_completed"
 		/// @DnDArgument : "value" "true"
 		if(is_completed == true){	/// @DnDAction : YoYo Games.Drawing.Set_Color
+=======
+		/// @DnDArgument : "var" "field.completed"
+		/// @DnDArgument : "value" "true"
+		if(field.completed == true){	/// @DnDAction : YoYo Games.Drawing.Set_Color
+>>>>>>> jvn/main
 			/// @DnDVersion : 1
 			/// @DnDHash : 0CE5B609
 			/// @DnDParent : 0246DDAE
@@ -71,8 +103,13 @@ if(show_todolist == true){	/// @DnDAction : YoYo Games.Drawing.Draw_Sprite
 		/// @DnDArgument : "x" "820"
 		/// @DnDArgument : "y" "300 + (i * 60)"
 		/// @DnDArgument : "caption" """"
+<<<<<<< HEAD
 		/// @DnDArgument : "var" "assigned_tasks[i] "
 		draw_text(820, 300 + (i * 60), string("") + string(assigned_tasks[i] ));
+=======
+		/// @DnDArgument : "var" "field.task"
+		draw_text(820, 300 + (i * 60), string("") + string(field.task));
+>>>>>>> jvn/main
 	
 		/// @DnDAction : YoYo Games.Drawing.Set_Color
 		/// @DnDVersion : 1

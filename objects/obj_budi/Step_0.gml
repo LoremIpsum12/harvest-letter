@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 depth = -y;
 if (!variable_instance_exists(id, "face")) {
     face = 0; 
@@ -37,6 +38,26 @@ if (global.popup_open) {
     speed = 0;
     image_speed = 0;
     
+=======
+ depth = -y;
+if (!variable_instance_exists(id, "face")) {
+    face = 0; 
+}
+
+var _hspd = 0;
+var _vspd = 0;
+
+/// FREEZE if popup open
+if (global.popup_open) {
+    _hspd = 0;
+    _vspd = 0;
+    hspeed = 0;
+    vspeed = 0;
+    speed = 0;
+    spd = 0;
+
+    image_speed = 0;
+>>>>>>> jvn/main
     if (face == 0) image_index = 0;
     if (face == 1) image_index = 11;
     if (face == 2) image_index = 7;
@@ -46,9 +67,12 @@ if (global.popup_open) {
 }
 
 // --- MOVEMENT ---
+<<<<<<< HEAD
 var _hspd = 0;
 var _vspd = 0;
 
+=======
+>>>>>>> jvn/main
 var _kanan = keyboard_check(vk_right);
 var _kiri  = keyboard_check(vk_left);
 var _atas  = keyboard_check(vk_up);
@@ -88,8 +112,16 @@ if (_hspd != 0 || _vspd != 0) {
     // B. JIKA DIAM (STOP)
     image_speed = 0;
     
+<<<<<<< HEAD
     if (face == 0) image_index = 0;
     if (face == 1) image_index = 11;
     if (face == 2) image_index = 7;
     if (face == 3) image_index = 3;
+=======
+    // Paksa frame ke posisi diam berdasarkan arah terakhir (face)
+    if (face == 0) image_index = 0;  // Stop hadap Bawah
+    if (face == 1) image_index = 11; // Stop hadap Atas (Frame 10)
+    if (face == 2) image_index = 7;  // Stop hadap Kanan (Frame 7)
+    if (face == 3) image_index = 3;  // Stop hadap Kiri (Frame 4)
+>>>>>>> jvn/main
 }

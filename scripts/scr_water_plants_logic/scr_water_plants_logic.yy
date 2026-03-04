@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Script4",
+  "%Name":"scr_water_plants_logic",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Script4",
+  "name":"scr_water_plants_logic",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

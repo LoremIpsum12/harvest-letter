@@ -34,5 +34,9 @@ typed_count = 0;
 
 // Visual settings
 highlight_padding = 20;
+<<<<<<< HEAD
 font_normal = fnt_popup;
+=======
+font_normal = fnt_title_bold;
+>>>>>>> jvn/main
 font_bold = fnt_title_bold;
