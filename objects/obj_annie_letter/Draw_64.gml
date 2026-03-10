@@ -30,7 +30,7 @@ draw_roundrect(center_x - half_w, button_y - half_h, center_x + half_w, button_y
 
 // Gambar Teks (Posisinya pas di tengah kotak tadi)
 draw_set_color(c_white);
-draw_text(center_x, button_y, "Open");
+draw_text(center_x, button_y, "Open It");
 
 // -----------------------------------------------------------
 

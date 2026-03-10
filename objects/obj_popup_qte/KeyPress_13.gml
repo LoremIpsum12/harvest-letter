@@ -19,13 +19,32 @@ if(obj_budi.typedWord == tugas_list[index_sekarang]){	/// @DnDAction : YoYo Ga
 	/// @DnDArgument : "var" "index_sekarang"
 	/// @DnDArgument : "op" "4"
 	/// @DnDArgument : "value" "array_length(tugas_list)"
-	if(index_sekarang >= array_length(tugas_list)){	/// @DnDAction : YoYo Games.Common.Function_Call
+	if(index_sekarang >= array_length(tugas_list)){	/// @DnDAction : YoYo Games.Common.Variable
+		/// @DnDVersion : 1
+		/// @DnDHash : 5E4E93A3
+		/// @DnDParent : 61412538
+		/// @DnDArgument : "expr" "obj_budi.coin_add"
+		/// @DnDArgument : "var" "coin_add"
+		coin_add = obj_budi.coin_add;
+	
+		/// @DnDAction : YoYo Games.Common.Function_Call
 		/// @DnDVersion : 1
 		/// @DnDHash : 5B19CE82
 		/// @DnDParent : 61412538
 		/// @DnDArgument : "function" "scr_coin_add"
 		/// @DnDArgument : "arg" "300"
 		scr_coin_add(300);
+	
+		/// @DnDAction : YoYo Games.Instances.Create_Instance
+		/// @DnDVersion : 1
+		/// @DnDHash : 3F8669DB
+		/// @DnDParent : 61412538
+		/// @DnDArgument : "xpos" "150"
+		/// @DnDArgument : "ypos" "980"
+		/// @DnDArgument : "objectid" "obj_rewards"
+		/// @DnDArgument : "layer" ""QTE""
+		/// @DnDSaveInfo : "objectid" "obj_rewards"
+		instance_create_layer(150, 980, "QTE", obj_rewards);
 	
 		/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1

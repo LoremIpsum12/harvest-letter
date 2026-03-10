@@ -34,6 +34,20 @@ var l2F892025_0;l2F892025_0 = keyboard_check_pressed(vk_enter);if (l2F892025_0
 		obj_game.alarm[0] = room_speed * 5;
 		global.carrotseed += 5;
 	
+		/// @DnDAction : YoYo Games.Common.Execute_Code
+		/// @DnDVersion : 1
+		/// @DnDHash : 4FBAAFA3
+		/// @DnDParent : 1A82F2A0
+		/// @DnDArgument : "code" "if (instance_exists(obj_inventory)) {$(13_10)    // Memanggil fungsi yang sudah dibuat di Create Event obj_inventory$(13_10)    obj_inventory.inventory_add(spr_carrot_seed, 0); $(13_10)}$(13_10)$(13_10)if (instance_exists(obj_quest_manager)) {$(13_10)    obj_quest_manager.complete_quest("collect_carrot");$(13_10)}"
+		if (instance_exists(obj_inventory)) {
+		    // Memanggil fungsi yang sudah dibuat di Create Event obj_inventory
+		    obj_inventory.inventory_add(spr_carrot_seed, 0); 
+		}
+		
+		if (instance_exists(obj_quest_manager)) {
+		    obj_quest_manager.complete_quest("collect_carrot");
+		}
+	
 		/// @DnDAction : YoYo Games.Instances.Destroy_Instance
 		/// @DnDVersion : 1
 		/// @DnDHash : 230FB941

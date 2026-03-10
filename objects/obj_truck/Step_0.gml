@@ -1,1 +1,1 @@
-depth = -y; //sprite layering
+depth = -y;

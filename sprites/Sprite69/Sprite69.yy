@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"harvest letter 09-03 Michael - 1",
+    "path":"harvest letter 09-03 Michael - 1.yyp",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

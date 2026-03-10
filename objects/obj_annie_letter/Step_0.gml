@@ -6,8 +6,8 @@ var l419B0D64_0;l419B0D64_0 = keyboard_check_pressed(vk_enter);if (l419B0D64_0
 	/// @DnDVersion : 1
 	/// @DnDHash : 4D2E7396
 	/// @DnDParent : 419B0D64
-	/// @DnDArgument : "expr" "string_pos("open", string_lower(keyboard_string)) > 0"
-	if(string_pos("open", string_lower(keyboard_string)) > 0){	/// @DnDAction : YoYo Games.Common.Variable
+	/// @DnDArgument : "expr" "string_pos("open it", string_lower(keyboard_string)) > 0"
+	if(string_pos("open it", string_lower(keyboard_string)) > 0){	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 1C52C472
 		/// @DnDParent : 4D2E7396
